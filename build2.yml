@@ -7,7 +7,7 @@ phases:
     commands:
       - echo "build 2"
       - echo "current branch"
-      - git branch --show-current
-      - git checoukt sandbox
+      - git branch --show-current && echo $_
+      - git checkout prod
       - echo "current branch"
       - git branch --show-current
