@@ -6,5 +6,8 @@ phases:
   build:
     commands:
       - echo "build 2"
-      - echo "CODEBUILD_SOURCE_VERSION"
-      - echo $CODEBUILD_SOURCE_VERSION
+      - echo "current branch"
+      - git branch --show-current
+      - git checoukt sandbox
+      - echo "current branch"
+      - git branch --show-current
