@@ -10,4 +10,4 @@ phases:
       - git branch --show-current && echo $_
       - git checkout prod
       - echo "current branch"
-      - git branch --show-current
+      - git branch --show-current && echo $_
