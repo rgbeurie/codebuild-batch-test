@@ -1,0 +1,22 @@
+version: 0.2
+
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+batch:
+  fast-fail: false
+  build-graph:
+    - identifier: build1
+      buildspec: build1.yml
+      env:
+        variables:
+          BUILD_ID: build1
+      ignore-failure: false
+    - identifier: build2
+      buildspec: build2.yml
+      env:
+        variables:
+          BUILD_ID: build2
+      depend-on:
+        - build1
